@@ -1,11 +1,11 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FollowTarget : MonoBehaviour
 {
     [Header("Target")]
     public Transform target;
     public string targetTag;
+    public bool buscarSempreMaisProximo;
 
     [Header("Movimento")]
     public float velocidadeMovimento = 1f;
@@ -20,8 +20,45 @@ public class FollowTarget : MonoBehaviour
 
 	void Update()
     {
+        ProcurarTarget();
+
         Movimentar();
         Rotacionar();
+    }
+
+    private void ProcurarTarget()
+    {
+        // Validamos se já não temos um alvo definido e se há uma tag definida
+        if (targetTag == "" || (!buscarSempreMaisProximo && target != null))
+        {
+            return;
+        }
+
+        GameObject[] targets = GameObject.FindGameObjectsWithTag(targetTag);
+
+        Transform possivelTarget = null;
+
+        foreach (GameObject checarTarget in targets)
+        {
+            float checarDistancia = Vector3.Distance(
+                checarTarget.transform.position,
+                transform.position
+            );
+
+            if (possivelTarget == null
+                || checarDistancia < Vector3.Distance(
+                    possivelTarget.transform.position,
+                    transform.position
+                ))
+            {
+                possivelTarget = checarTarget.transform;
+            }
+        }
+
+        if (possivelTarget != null)
+        {
+            target = possivelTarget;
+        }
     }
 
     private void Movimentar()
