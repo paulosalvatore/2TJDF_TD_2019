@@ -119,8 +119,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1772752362918756}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.25, y: 2.37, z: 3.12}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.79, y: 2.37, z: -0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4235273712128216}
@@ -363,6 +363,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ef81a13e18a6c4a886451636ca5223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 1414153752367946, guid: cab2d19403adb624498fe56512c886f6,
+    type: 2}
+  rb: {fileID: 54493831118584624}
+  forcaTorque: 10
 --- !u!114 &114570228126944342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   targetTag: 
+  buscarSempreMaisProximo: 0
   velocidadeMovimento: 1
   velocidadeRotacao: 1
   lookAt: 1

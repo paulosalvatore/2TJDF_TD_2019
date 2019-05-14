@@ -328,14 +328,6 @@ Prefab:
       propertyPath: m_Name
       value: "Helic\xF3ptero (1)"
       objectReference: {fileID: 0}
-    - target: {fileID: 4065019647751474, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4065019647751474, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
   m_IsPrefabAsset: 0
@@ -498,7 +490,7 @@ GameObject:
   - component: {fileID: 551683225}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -688,14 +680,6 @@ Prefab:
     - target: {fileID: 1772752362918756, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
       propertyPath: m_Name
       value: "Helic\xF3ptero (2)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4065019647751474, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4065019647751474, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3acd05a42aa8c9489c2066c91ac743c, type: 2}
